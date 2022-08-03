@@ -1,0 +1,73 @@
+/**
+ * Variables
+ */
+
+$primary: #e20e88;
+$ciGrayDark: #161615;
+$ciGray: #707070;
+$ciGreen: #a2e2bc;
+
+$white: #fff;
+$black: #000;
+$red: #ff0000;
+
+$theatherRed: #b72841;
+
+// $hover-color-image:    rgba($ciRosa, 0.65);
+$hover-color-image:    transparent;
+
+$image-size-default: scale(1.03);
+// $hover-effect-image:    rotate(-5deg) scale(1.2);
+$hover-effect-image:    scale(1.2);
+
+$font-size-text: clamp(calculateRem(18px), 6vw,calculateRem(25px));
+$font-size-headline: clamp(calculateRem(50px), 6vw, calculateRem(122px));
+$font-size-intro-text: clamp(calculateRem(25px), 3vw, calculateRem(45px));
+$font-size-footer-text-big: clamp(calculateRem(50px), 8vw, calculateRem(122px));
+$font-size-footer-text: calculateRem(16px);
+$font-size-circles: clamp(calculateRem(40px), 7vw, calculateRem(140px));
+$font-size-20: clamp(calculateRem(16px), 6vw, calculateRem(20px));
+$font-size-35: clamp(calculateRem(28px), 6vw, calculateRem(35px));
+$font-size-55: clamp(calculateRem(34px), 7vw, calculateRem(55px));
+
+
+$font-family-poppins: "Poppins", sans-serif;
+
+$font-family:               $font-family-poppins;
+$font-family-headings:      $font-family-poppins;
+
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+
+$font-weight-headings: $font-weight-bold;
+$font-weight-text: 300;
+$font-weight-inputs: 400;
+$font-weight-buttons: 500;
+$font-weight-footer:  $font-weight-normal;
+
+$h1-font-size: $font-size-headline;
+$h2-font-size: $font-size-intro-text;
+$h3-font-size: clamp(calculateRem(26px), 6vw, calculateRem(45px));
+$headings-font-size: (
+    1: $h1-font-size,
+    2: $h2-font-size,
+    3: $h3-font-size,
+);
+$headings-line-height: 1.35em;
+
+$border-width: 2px;
+
+$transition-base: 0.2s ease-in-out;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 981px,
+  xl: 1024px,
+  xxl: 1200px,
+  3xl: 1400px,
+  4xl: 1600px,
+);

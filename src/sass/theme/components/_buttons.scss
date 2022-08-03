@@ -1,0 +1,74 @@
+.button {
+    // 
+}
+
+body .et_pb_button {
+	border: 0 !important;
+	text-transform: none;
+	font-family: $font-family;
+	font-weight: $font-weight-medium;
+
+	&::after {
+		// content: "" !important;
+		// line-height: 1em !important;
+		// background-color: $white;
+		// mask-image: url("../img/pfeil-weiss.svg");
+		// mask-size: 60px 14px;
+		// mask-repeat: no-repeat;
+		// mask-position: right center;
+		// width: 60px;
+		// height: 14px;
+		display: none !important;
+	}
+
+	&:hover {
+		&::after {
+			width: 40px;
+		}
+	}
+
+	&.et_pb_bg_layout_dark {
+		background-color: $white;
+		// color: $black !important;
+
+		// &::after {
+		// 	color: $primaryDark;
+		// 	background-color: $primaryDark;
+		// }
+
+		// &:hover {
+		// 	background-color: $white;
+		// 	color: $primaryDark !important;
+		// }
+	}
+
+	&.et_pb_bg_layout_light {
+		// background-color: $primaryLighter;
+		// color: $white !important;
+
+		// &::after {
+		// 	color: $white;
+		// 	background-color: $white;
+		// }
+	}
+
+	&.et_pb_button--icon {
+		border: 0 !important;
+		background: none !important;
+		display: inline-block !important;
+		width: 60px;
+		height: 14px;
+		overflow: hidden;
+		font-size: 0 !important;
+
+		&::after {
+			content: "" !important;
+			font-size: 1rem;
+			right: 0;
+		}
+
+		&:hover {
+			transform: translateX(22px);
+		}
+	}
+}

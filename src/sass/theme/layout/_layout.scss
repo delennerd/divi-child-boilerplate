@@ -1,0 +1,16 @@
+a {
+	color: $black;
+
+	&:hover,
+	&:focus {
+		color: $primary;
+	}
+}
+
+
+#main-content .container:before {
+	// display: none !important;
+}
+
+#content-area {
+}

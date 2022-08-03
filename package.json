@@ -1,0 +1,26 @@
+{
+  "name": "ideenmuele-theme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "mix",
+    "watch": "mix watch",
+    "prod": "mix --production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/delennerd/Ideenmuehle-wp-theme-2022.git"
+  },
+  "author": "Pascal Lehnert <mail@delennerd.de>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/delennerd/Ideenmuehle-wp-theme-2022/issues"
+  },
+  "homepage": "https://github.com/delennerd/Ideenmuehle-wp-theme-2022#readme",
+  "devDependencies": {
+    "laravel-mix": "^6.0.43",
+    "sass": "^1.49.9",
+    "sass-loader": "^12.6.0"
+  }
+}

@@ -1,0 +1,135 @@
+.display-posts-pagination {
+	margin-top: 3rem;
+
+	ul.pagination {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-direction: row;
+		font-size: $font-size-20;
+	}
+
+	.page-link {
+		min-width: 44px;
+		display: block;
+		// height: 30px;
+		padding: 7px 10px;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: transparent;
+		color: $black;
+		border: 1px solid $black;
+		position: relative;
+
+		&:hover,
+		&:focus {
+			background-color: $black;
+			color: $white;
+		}
+
+		&.current {
+			background-color: $primary;
+			color: $white;
+			border-color: $primary;
+		}
+
+		&.next,
+		&.previous {
+			font-size: 0;
+
+			&:before {
+				font-size: $font-size-20;
+				font-family: ETmodules !important;
+				speak: none;
+				font-style: normal;
+				font-weight: 400;
+				-webkit-font-feature-settings: normal;
+				font-feature-settings: normal;
+				font-variant: normal;
+				text-transform: none;
+				line-height: 1;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+				text-shadow: 0 0;
+				direction: ltr;
+			}
+		}
+
+		&.previous:before {
+			content: "4";
+		}
+
+		&.next:before {
+			content: "5";
+		}
+	}
+}
+
+.nav-single {
+	.nav-previous,
+	.nav-next {
+		a {
+			@extend .button;
+
+			.meta-nav {
+				line-height: 1;
+				font-size: 0;
+				position: relative;
+				transform: translateY(calc(50% - 0.45rem));
+
+				&::before {
+					@extend %elegant-icons;
+					font-size: 1.2rem;
+				}
+			}
+		}
+	}
+
+	.nav-next {
+		float: left;
+
+		a {
+			.meta-nav {
+				float: left;
+
+				&::before {
+					content: "\34";
+				}
+			}
+		}
+	}
+
+	.nav-previous {
+		float: right;
+
+		a {
+			.meta-nav {
+				float: right;
+
+				&::before {
+					content: "\35";
+				}
+			}
+		}
+	}
+}
+
+.post-back-to-posts {
+	position: relative;
+
+	&::before {
+		@extend %elegant-icons;
+		content: "\34";
+		display: inline-block;
+		color: white;
+		margin: 0;
+		opacity: 1;
+		position: relative !important;
+		line-height: 1 !important;
+		font-size: 1.2em !important;
+		transform: translateY(calc(50% - 0.45rem));
+	}
+}

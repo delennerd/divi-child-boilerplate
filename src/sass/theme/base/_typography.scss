@@ -1,0 +1,61 @@
+html {
+    font-size: 100% !important;
+}
+
+body {
+	font-family: $font-family;
+	font-weight: $font-weight-text;
+    font-size: 20px;
+	line-height: 1.3em;
+    color: $black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $font-family-headings;
+	font-weight: $font-weight-headings;
+    color: $black;
+}
+
+@each $heading, $font-size in $headings-font-size {
+	h#{$heading},
+	.h#{$heading} {
+		font-size: $font-size;
+		line-height: $headings-line-height;
+	}
+}
+
+p,
+ol,
+cite,
+ul,
+li {
+	line-height: 1.3em;
+}
+
+.lead-text {
+	font-size: $font-size-text;
+	margin-top: 3rem;
+	margin-bottom: 3rem !important;
+
+	&--spacing-large {
+		margin-top: clamp(4rem, 10%, 8rem);
+		margin-bottom: clamp(3rem, 8%, 6rem) !important;
+	}
+
+    &--spacing-large-top {
+        margin-top: 3.875rem !important;
+    }
+
+    &--no-spacing-y {
+        margin-block: 0 !important;
+    }
+}
+
+a {
+	transition: $transition-base;
+}

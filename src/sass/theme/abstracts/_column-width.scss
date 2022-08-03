@@ -1,0 +1,4 @@
+@function columnWidth($col, $column-space-right: 5.5%) {
+	// @return calc(($col * 100 / 12) * 1% - ($column-space-right / ((12 / $col) * 0.5)));
+	@return calc(($col * 100 / 12) * 1%);
+}
