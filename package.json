@@ -22,5 +22,9 @@
     "laravel-mix": "^6.0.43",
     "sass": "^1.49.9",
     "sass-loader": "^12.6.0"
+  },
+  "dependencies": {
+    "@mdi/font": "^7.0.96",
+    "bootstrap": "^5.2.2"
   }
 }
