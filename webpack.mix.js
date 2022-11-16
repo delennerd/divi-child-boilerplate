@@ -25,13 +25,16 @@ mix.options({
 });
 
 mix.js("src/js/scripts.js", "assets/js/scripts.js")
-mix.sass("src/sass/app.scss", "assets/css/app.css")
+mix.sass("src/sass/theme.scss", "assets/css/theme.css")
 
 mix.copy("src/img", "assets/img")
 	.copy("src/fonts", "assets/fonts");
 
-// if (!mix.inProduction()) {
-// 	webpackConfig.devtool = "inline-source-map";
-// }
+if (!mix.inProduction()) {
+	webpackConfig.devtool = "source-map";
+}
+else {
+    webpackConfig.optimization.minimize = true;
+}
 
 mix.webpackConfig(webpackConfig);
